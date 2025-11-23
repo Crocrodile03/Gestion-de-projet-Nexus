@@ -36,6 +36,7 @@ Récupère le mot de passe admin avec cette commande :
 ```docker exec nexus cat /nexus-data/admin.password```
 
 *Sur la page web de nexus*
+
 Tu peux ensuite te connecter avec ce mot de passe sur la page nexus que tu as ouverte précédement. Utilise _admin_ comme user et le mot de passe récupéré comme mot de passe.
 
 On va ensuite te demander de changer de mot de passe (ce qui est fortement recommandé). Dans le cadre de la demo tu peux *enable anonymous user* ce qui t'évitera de devoir tout le temps taper ton mot de passe quand tu voudra faire un *curl* sur ton repo. Si tu décides de quand même *disable anonymous user* alors rajoute ```-u admin:MON_MDP``` (**MON_MDP corresponds au mot de passe que tu as choisis pour admin**) à chacun de tes ```curl```
@@ -54,6 +55,7 @@ Pour pouvoir créer un repo tu dois :
 
 ### Création de fichier :
 *Retourne dans ton invite de commande*
+
 Crée un simple fichier par exemple
 
 ```echo "Hello world" > hello.txt```
@@ -66,6 +68,7 @@ Envoie le fichier crée sur nexus dans ton repository avec la commande :
 ```curl -u admin:MON_MDP --upload-file hello.txt http://localhost:8081/repository/demo-raw/hello.txt```
 
 *Retourne sur la page web*
+
 Pour vérifier que le fichier s'est bien ajouté clique sur *Browse* et va dans le repository que tu as crée. Tu devrais voir apparaître le fichier que tu viens de rajouter.
 
 ### Téléchargement et lecture du fichier :
