@@ -56,6 +56,7 @@ Crée un simple fichier par exemple
 
 Envoit le fichier crée sur nexus dans ton repo avec la commande :
 (Oublie pas de changer _MON_MDP_ par ton mot de passe)
+
 ```curl -u admin:MON_MDP \ --upload-file hello.txt \ http://localhost:8081/repository/demo-raw/hello.txt```
 
 ### Téléchargement et lecture du fichier :
