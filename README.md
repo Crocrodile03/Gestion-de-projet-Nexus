@@ -12,7 +12,7 @@ Vérifie que tu as bien docker et installe l'image nexus avec cette commande :
 
 Lance en paralèlle une page web et connecte là au le localhost sur le port 8081 :
 
-```https://localhost:8081```
+```http://localhost:8081```
 
 Si la page ne s'affiche pas tu peux vérifier que Nexus s'est bien lancé utilise la commande (la page peut prendre plusieurs minutes avant de s'afficherà :
 
